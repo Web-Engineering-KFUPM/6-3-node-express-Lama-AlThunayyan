@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("Express server is running");
 });
 
-
+import { getRandomQuote } from "./quotes.js";
 // TODO 6.2: Create "/api/quote" route
 app.get("/api/quote", (req, res) => {
   const quote = getRandomQuote();
